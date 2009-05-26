@@ -9,22 +9,22 @@ Perl::Critic::Itch - A collection of Policies to solve some Itches
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
 
-## Please see file perltidy.ERR
 Perl::Critic::Itch was created to furfill some special requests when 
 analysing Perl Code. This policies, may not be usefull to everyone,
-and surely not consensual, but the solve some little itches i had,
-and makes me sleep better at night !
+and surely not consensual, but they solve some little itches i had,
+and it makes me sleep better at night!
   
 List of Policies implemented:
+
 =head2 L<Perl::Critic::Policy::CodeLayout::ProhibitHashBarewords>
 
 

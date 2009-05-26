@@ -1,9 +1,13 @@
+.cvsignore
 Changes
-MANIFEST
-Makefile.PL
-README
 lib/Perl/Critic/Itch.pm
+lib/Perl/Critic/Policy/CodeLayout/ProhibitHashBarewords.pm
+Makefile.PL
+MANIFEST
+Perl-Critic-Itch-0.02.tar.gz
+README
 t/00-load.t
 t/pod-coverage.t
 t/pod.t
+t/version.t
 META.yml                                 Module meta-data (added by MakeMaker)
