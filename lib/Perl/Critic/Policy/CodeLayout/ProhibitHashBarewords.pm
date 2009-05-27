@@ -5,7 +5,7 @@ use warnings;
 use Perl::Critic::Utils;
 use base 'Perl::Critic::Policy';
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my $desc = q{Hash key with bareword};
 
@@ -51,23 +51,18 @@ This policy is part of L<Perl::Critic::Itch>.
 
 =head1 VERSION
 
-0.03
+0.04
 
 =head1 DESCRIPTION
 
-This Policy required (single) quotes all hash keys barewords.
+This Policy forces (single) quotes on all hash keys barewords.
 
-When specifying constant string hash keys, you should always use (single) quotes. E.g., $my_hash{'some_key'} 
+When specifying constant string hash keys, you should use (single) quotes. E.g., $my_hash{'some_key'} 
 
-I believe that this is the appropriate choice because it results in consistent formatting and if you forget to use quotes sometimes, you have to remember to add them when your key contains internal hypens, spaces, or other special characters. 
+I believe that this is the appropriate choice because it results in consistent formatting and if you forget to use quotes sometimes, you have to remember to add them when your key contains internal hyphens, spaces, or other special characters. 
 
 Quoted keys are also more likely to be syntax-highlighted by your editor.
 
-
-
-When using a bareword as a hash key, we should always use backtips to mode the code more legible.
-
-Things as $my_elem{some_bareword} should be writen as $my_elem{'some_bareword'}
 
 
 =head1 INTERFACE

@@ -5,22 +5,22 @@ use strict;
 
 =head1 NAME
 
-Perl::Critic::Itch - A collection of Policies to solve some Itches
+Perl::Critic::Itch - A collection of Perl::Critic Policies to solve some Itches
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 =head1 SYNOPSIS
 
-Perl::Critic::Itch was created to furfill some special requests when 
-analysing Perl Code. This policies, may not be usefull to everyone,
-and surely not consensual, but they solve some little itches i had,
+Perl::Critic::Itch was created to fulfill some special requests when 
+analyzing Perl Code. This policies, may not be useful to everyone,
+and surely not consensual, but they solve some little itches I had,
 and it makes me sleep better at night!
   
 List of Policies implemented:
@@ -55,10 +55,6 @@ You can also look for information at:
 =item * RT: CPAN's request tracker
 
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-Itch>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Perl-Critic-Itch>
 
 =item * CPAN Ratings
 
