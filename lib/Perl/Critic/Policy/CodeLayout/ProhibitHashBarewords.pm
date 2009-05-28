@@ -5,7 +5,7 @@ use warnings;
 use Perl::Critic::Utils;
 use base 'Perl::Critic::Policy';
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my $desc = q{Hash key with bareword};
 
@@ -59,7 +59,7 @@ This Policy forces (single) quotes on all hash keys barewords.
 
 When specifying constant string hash keys, you should use (single) quotes. E.g., $my_hash{'some_key'} 
 
-I believe that this is the appropriate choice because it results in consistent formatting and if you forget to use quotes sometimes, you have to remember to add them when your key contains internal hyphens, spaces, or other special characters. 
+This is the appropriate choice because it results in consistent formatting and if you forget to use quotes sometimes, you have to remember to add them when your key contains internal hyphens, spaces, or other special characters. 
 
 Quoted keys are also more likely to be syntax-highlighted by your editor.
 
@@ -67,6 +67,6 @@ Quoted keys are also more likely to be syntax-highlighted by your editor.
 
 =head1 INTERFACE
 
-Stadard for a L<Perl::Critic::Policy>.
+Standard for a L<Perl::Critic::Policy>.
 
 
