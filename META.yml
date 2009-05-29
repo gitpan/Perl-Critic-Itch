@@ -1,8 +1,8 @@
 --- #YAML:1.0
 name:                Perl-Critic-Itch
-version:             0.05
+version:             0.06
 abstract:            Perl::Critic::Itch - A collection of Policies to solve some Itches
-license:             perl
+license:             ~
 author:              
     - Marcelo Rodrigues <marcelo@cpan.org>
 generated_by:        ExtUtils::MakeMaker version 6.42

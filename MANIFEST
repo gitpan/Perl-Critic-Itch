@@ -1,12 +1,15 @@
 .cvsignore
+20_policies_codelayout.t
 Changes
 lib/Perl/Critic/Itch.pm
 lib/Perl/Critic/Policy/CodeLayout/ProhibitHashBarewords.pm
 Makefile.PL
-MANIFEST
-Perl-Critic-Itch-0.02.tar.gz
+MANIFEST			This list of files
+Perl-Critic-Itch-0.05.tar.gz
 README
 t/00-load.t
+t/20_policies.t
+t/CodeLayout/ProhibitHashBarewords.run
 t/pod-coverage.t
 t/pod.t
 t/version.t

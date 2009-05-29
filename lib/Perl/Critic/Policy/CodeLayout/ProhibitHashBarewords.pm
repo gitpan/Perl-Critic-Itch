@@ -5,7 +5,7 @@ use warnings;
 use Perl::Critic::Utils;
 use base 'Perl::Critic::Policy';
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 my $desc = q{Hash key with bareword};
 
@@ -20,17 +20,7 @@ sub violates {
     return if !is_hash_key($elem);
 
     return if is_method_call($elem);
-    return if is_subroutine_name($elem);
     return if is_function_call($elem);
-    return if is_perl_builtin($elem);
-    return if is_perl_global($elem);
-
-    return $self->violation( $desc, ['n/a'], $elem );
-    my $sib = $elem->snext_sibling();
-
-    return unless $sib;
-    return unless $sib->isa('PPI::Token::Number');
-    return unless $sib =~ m/^\d+\z/;
 
     return $self->violation( $desc, ['n/a'], $elem );
 }
@@ -51,7 +41,7 @@ This policy is part of L<Perl::Critic::Itch>.
 
 =head1 VERSION
 
-0.04
+0.06
 
 =head1 DESCRIPTION
 
@@ -69,4 +59,15 @@ Quoted keys are also more likely to be syntax-highlighted by your editor.
 
 Standard for a L<Perl::Critic::Policy>.
 
+=head1 ACKNOWLEDGMENTS
+
+Thanks to
+
+=over 4
+
+=item * Jose Carlos Pereira for pointing me in the right direction!
+
+=item * All Perl::Critic::Policy contributors. Their code examples were quite useful.
+
+=back
 

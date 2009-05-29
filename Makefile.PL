@@ -7,7 +7,6 @@ WriteMakefile(
     AUTHOR        => 'Marcelo Rodrigues <marcelo@cpan.org>',
     VERSION_FROM  => 'lib/Perl/Critic/Itch.pm',
     ABSTRACT      => 'Perl::Critic::Itch - A collection of Policies to solve some Itches',
-    LICENSE       => 'perl',
     PL_FILES      => {},
     PREREQ_PM     => {
                       'Test::More'              => 0,
