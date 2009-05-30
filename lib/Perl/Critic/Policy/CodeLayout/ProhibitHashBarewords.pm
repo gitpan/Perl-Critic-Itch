@@ -5,12 +5,11 @@ use warnings;
 use Perl::Critic::Utils;
 use base 'Perl::Critic::Policy';
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
-my $desc = q{Hash key with bareword};
 
 sub default_severity { return $SEVERITY_MEDIUM }
-sub default_themes   { return qw(pbp danger) }
+sub default_themes   { return qw(itch) }
 sub applies_to       { return 'PPI::Token::Word' }
 
 sub violates {
@@ -22,7 +21,9 @@ sub violates {
     return if is_method_call($elem);
     return if is_function_call($elem);
 
-    return $self->violation( $desc, ['n/a'], $elem );
+    my $desc = q{Hash key with bareword};
+    my $expl = q{Place quotes on all hash key barewords};
+    return $self->violation( $desc, $expl, $elem );
 }
 
 1;
@@ -41,7 +42,7 @@ This policy is part of L<Perl::Critic::Itch>.
 
 =head1 VERSION
 
-0.06
+0.07
 
 =head1 DESCRIPTION
 

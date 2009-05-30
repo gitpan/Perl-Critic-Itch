@@ -9,11 +9,11 @@ Perl::Critic::Itch - A collection of Perl::Critic Policies to solve some Itches
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 
 =head1 SYNOPSIS
@@ -69,6 +69,15 @@ L<http://search.cpan.org/dist/Perl-Critic-Itch/>
 
 =head1 ACKNOWLEDGEMENTS
 
+Thanks to
+
+=over 4
+
+=item * Jose Carlos Pereira for pointing me in the right direction!
+
+=item * All Perl::Critic::Policy contributors. Their code examples were quite useful.
+
+=back
 
 =head1 LICENSE
 

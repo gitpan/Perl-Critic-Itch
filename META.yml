@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Perl-Critic-Itch
-version:             0.06
+version:             0.07
 abstract:            Perl::Critic::Itch - A collection of Policies to solve some Itches
 license:             ~
 author:              

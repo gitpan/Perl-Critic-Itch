@@ -14,3 +14,7 @@ Revision history for Perl-Critic-Itch
         Bugfix: Removed unnecessary lines from ProhibitHashBarewords
         Enhancements: Test File added to check for Barewords on hash keys
         Enhancements: Now reserved keys are also not allowed
+0.07    31 May 2009
+        Bugfix: pbp removed from default themes. Error message is more clear now.
+             (Thanks to Jeffrey Thalhammer for pointing this out)
+	Enhancements: itch theme added
